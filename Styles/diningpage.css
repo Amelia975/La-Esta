@@ -1,0 +1,178 @@
+@import url(./main.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    
+}
+.header{
+    min-height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(18, 19, 19, 0.534), rgba(4, 36, 41, 0.418)), url(../images/dining0.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    min-height: 5vh;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/*logo*/
+nav img{
+    width: 150px;
+    position:relative;
+    top: -30px;
+    left: -70px;
+}
+/*menu bar*/
+.nav-links{
+    flex: 1;
+    text-align:center;
+    position: relative;
+    top: -20px;
+    left: -40px;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*style for menu bar*/
+.nav-links ul li::after {
+    content: '';
+    width: 100%;
+    width: 2px;
+    background: rgba(240, 245, 245, 0.432);
+    display:inline-flex;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+    border: 1px solid ;
+    background:rgb(230, 228, 224);
+    color: rgb(160, 127, 55);
+    transition: 1s;
+}
+/*slogan*/
+.text-box {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(32, 31, 31, 0);
+}
+.text-box h1 {
+    font-size: 52px;
+    font-weight:lighter;
+    letter-spacing: 2px;
+}
+/*--------Dining small description----*/
+.About{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    top: -60px;
+}
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.About p {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+/*dining 2, dining 4*/
+.dining{
+   
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.dining-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.dining-col img{
+    width: 100%;
+}
+.dining-col h1{
+    padding-top: 0;
+
+}
+.dining-col p{
+    padding: 5px 0 10px;
+}
+/*explore button*/
+.button {
+    background-color: #ad9544;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*dining 1, dining 3*/
+.dine{
+   
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: rgba(122, 119, 119, 0.562);
+}
+.dine-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.dine-col img{
+    width: 100%;
+}
+.dine-col h1{
+    padding-top: 0;
+    color: white;
+
+}
+.dine-col p{
+    padding: 5px 0 10px;
+    color: white;
+}
+/*explore button*/
+.button {
+    background-color: #ad9544;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    width: 65%;
+    margin: auto;
+}
